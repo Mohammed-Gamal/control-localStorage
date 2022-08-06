@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #009688;
+  --main-transition: 0.3s;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.localStorage-container {
+  margin-top: 50px;
+}
+.localStorage-container .container {
+  padding: 25px;
+  background-color: #eee;
+  box-shadow: 1px 0 9px rgb(0 0 0 / 30%);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.localStorage-container .field input#input-field {
+  width: 100%;
+  border: none;
+  padding: 12px 20px;
+  caret-color: var(--main-color);
+}
+.localStorage-container .field input#input-field:focus {
+  outline: 1px solid var(--main-color);
+}
+.localStorage-container .field .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.localStorage-container .field .buttons span {
+  background-color: var(--main-color);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.localStorage-container .field .buttons span.clear-items {
+  background-color: red;
+}
+.localStorage-container .field .buttons span:hover {
+  opacity: 0.8;
+}
+.localStorage-container .results {
+  background-color: white;
+  padding: 15px;
+  border: 2px dashed var(--main-color);
+  text-align: center;
+  font-size: 18px;
+}
+.localStorage-container .results span span {
+  color: var(--main-color);
+}
